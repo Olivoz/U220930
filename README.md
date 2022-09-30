@@ -18,7 +18,7 @@ The `Load CMS` button will fetch the following data from the web server and disp
 }
 ```
 
-The web application loads it's layout from json. The format can be defined like the folloing:
+The web application loads it's layout from json. The format can be defined like the following:
 
 ```JSON
 {
@@ -37,3 +37,4 @@ The web application loads it's layout from json. The format can be defined like 
 }
 
 ```
+``content`` and ``id`` are optional
