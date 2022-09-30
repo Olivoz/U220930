@@ -11,6 +11,11 @@
     {
       "tag": "ul",
       "id": "carListElement"
+    },
+    {
+      "tag": "button",
+      "id": "loadCMSButtonElement",
+      "content": "Load CMS"
     }
   ]
 }
