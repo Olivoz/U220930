@@ -12,6 +12,13 @@ function loadCars() {
   });
 }
 
+function fetchData(URL, onLoad) {
+  const req = new XMLHttpRequest();
+  req.addEventListener("load", onLoad);
+  req.open("GET", URL);
+  req.send();
+}
+
 function loadStructure() {
   let data = JSON.parse(this.responseText);
   data.elements.forEach((elementJSON) => {
@@ -19,16 +26,10 @@ function loadStructure() {
   });
 
   loadCMSButtonElement.onclick = () => {
-    const req = new XMLHttpRequest();
-    req.addEventListener("load", loadCars);
-    req.open("GET", "http://localhost:5500/public/json/cars.json");
-    req.send();
+    fetchData("http://localhost:5500/public/json/cars.json", loadCars);
   };
 }
 
 function build() {
-  const req = new XMLHttpRequest();
-  req.addEventListener("load", loadStructure);
-  req.open("GET", "http://localhost:5500/public/json/structure.json");
-  req.send();
+  fetchData("http://localhost:5500/public/json/structure.json", loadStructure);
 }
