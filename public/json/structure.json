@@ -1,0 +1,13 @@
+{
+  "elements": {
+    "h1": {
+      "content": "ACME Cars"
+    },
+    "h2": {
+      "content": "Available cars"
+    },
+    "ul": {
+      "id": "carListElement"
+    }
+  }
+}
