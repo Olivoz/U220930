@@ -26,10 +26,10 @@ function loadStructure() {
   });
 
   loadCMSButtonElement.onclick = () => {
-    fetchData("http://localhost:5500/public/json/cars.json", loadCars);
+    fetchData("json/cars.json", loadCars);
   };
 }
 
 function build() {
-  fetchData("http://localhost:5500/public/json/structure.json", loadStructure);
+  fetchData("json/structure.json", loadStructure);
 }
