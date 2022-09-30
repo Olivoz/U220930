@@ -7,6 +7,7 @@ function appendElement(target, elementName, content, id) {
 
 function loadCars() {
   let data = JSON.parse(this.responseText);
+  carListElement.innerHTML = "";
   data.cars.forEach((car) => {
     appendElement(carListElement, "li", car);
   });
