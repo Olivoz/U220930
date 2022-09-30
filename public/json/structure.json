@@ -1,13 +1,16 @@
 {
-  "elements": {
-    "h1": {
+  "elements": [
+    {
+      "tag": "h1",
       "content": "ACME Cars"
     },
-    "h2": {
+    {
+      "tag": "h2",
       "content": "Available cars"
     },
-    "ul": {
+    {
+      "tag": "ul",
       "id": "carListElement"
     }
-  }
+  ]
 }
