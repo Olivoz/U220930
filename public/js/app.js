@@ -5,4 +5,14 @@ function appendElement(target, elementName, content, id) {
   target.appendChild(element);
 }
 
-function build() {}
+function loadStructure() {
+  let data = JSON.parse(this.responseText);
+  console.log(data);
+}
+
+function build() {
+  const req = new XMLHttpRequest();
+  req.addEventListener("load", loadStructure);
+  req.open("GET", "http://localhost:5500/public/json/structure.json");
+  req.send();
+}
